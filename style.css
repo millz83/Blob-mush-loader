@@ -1,0 +1,89 @@
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    height: 100vh;
+    background-color: #333;
+  
+
+}
+
+
+.blob-mush {
+	position: absolute;
+    top: 50%;
+	margin-left:60px;
+	width: 100px;
+	height: 100px;
+	margin: -25px;
+	background-color: transparent;
+	border-radius: 100px;
+	box-shadow: inset 0 0 0 5px orangered;
+	animation: 3s bordertl-63 linear infinite, 4s bordertr-63 linear infinite, 5.6s borderbl-63 linear infinite, 3.3s borderbr-63 linear infinite, 3.6s rotate linear infinite, 2s hover ease-in-out infinite;
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes bordertl-63 {
+	0%, 100% {
+		border-top-left-radius: 100px;
+	}
+	25% {
+		border-top-left-radius: 90px;
+	}
+	50% {
+		border-top-left-radius: 80px;
+	}
+	75% {
+		border-top-left-radius: 70px;
+	}
+}
+@keyframes bordertr-63 {
+	0%, 100% {
+		border-top-right-radius: 100px;
+	}
+	25% {
+		border-top-right-radius: 90px;
+	}
+	50% {
+		border-top-right-radius: 100px;
+	}
+	75% {
+		border-top-right-radius: 70px;
+	}
+}
+@keyframes borderbr-63 {
+	0%, 100% {
+		border-bottom-right-radius: 100px;
+	}
+	25% {
+		border-bottom-right-radius: 70px;
+	}
+	50% {
+		border-bottom-right-radius: 80px;
+	}
+	75% {
+		border-bottom-right-radius: 90px;
+	}
+}
+@keyframes borderbl-63 {
+	0%, 100% {
+		border-bottom-left-radius: 100px;
+	}
+	25% {
+		border-bottom-left-radius: 90px;
+	}
+	50% {
+		border-bottom-left-radius: 80px;
+	}
+	75% {
+		border-bottom-left-radius: 70px;
+	}
+}
+
